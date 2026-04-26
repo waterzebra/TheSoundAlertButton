@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h1>calculator</h1>
+
+<button id="Buttony" onclick="But()">Button of Doom</button>
+
+<script>
+
+let ind = new Audio ("indianS.mp3")
+
+let sadVG = new Audio ("sad-villager.mp3")
+
+function But() {
+let answer = confirm("Spooky")
+if (answer === true) {
+ind.play()
+sadVG.pause();
+sadVG.currentTime = 0;
+alert("This button sends 2 alerts if u click confirm!")
+ind.pause();
+sadVG.play()
+alert("Hahahahahahahahaha")
+}
+}
+
+</script>
+
+</body>
+</html>
